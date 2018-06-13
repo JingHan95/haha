@@ -1,0 +1,17 @@
+{
+  "name": "hj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "add.js",
+  "dependencies": {
+    "expect": "^23.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/_mocha --timeout 10000 --bail ./*.spec.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

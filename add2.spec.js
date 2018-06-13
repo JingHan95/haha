@@ -1,8 +1,8 @@
-var add = require('./add.js');
+var add = require('./example.html');
 var expect = require('chai').expect;
 
-describe('加法函数的测试', function() {
-  it('2加2应该等于4', function() {
-    expect(add(2, 2)).to.be.equal(4);
+describe('-法函数的测试', function() {
+  it('2-2应该等于0', function() {
+    expect(min(2, 2)).to.be.equal(0);
   });
 });

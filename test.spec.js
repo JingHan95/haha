@@ -46,6 +46,11 @@ var n_require=(data.toString().split('require')).length-1;
       expect(data.toString()).to.include('img')
     });
   });
+  describe('#indexOf4()', function(){
+    it('Ensuring that information conveyed by color differences is also available in text', function(){
+      expect(n_red).to.be.equal(n_require)
+    });
+  });
   describe('#indexOf2()', function(){
     it('every <img> has "alt"', function(){
       expect(n_img).to.be.equal(n_alt);
@@ -56,11 +61,7 @@ var n_require=(data.toString().split('require')).length-1;
       expect(data.toString()).to.not.include('alt= ""')
     });
   });
-  describe('#indexOf4()', function(){
-    it('Ensuring that information conveyed by color differences is also available in text', function(){
-      expect(n_red).to.be.equal(n_require)
-    });
-  });
+
 
 
 

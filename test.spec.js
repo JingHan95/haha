@@ -16,8 +16,7 @@ console.log("同步读取: " + data.toString());
 console.log("程序执行完毕。");
 */
 
-=======
->>>>>>> add
+
 
 
 var fs = require("fs");
@@ -36,11 +35,6 @@ if(data.toString != ''){
 
 
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> add
 var expect = require('chai').expect;
 var n_img=(data.toString().split('img')).length-1;
 var n_alt=(data.toString().split('alt')).length-1;
@@ -66,10 +60,3 @@ var n_require=(data.toString().split('require')).length-1;
 
 
 
-<<<<<<< HEAD
-=======
-
-  var n_red=(data.toString().split('color:red')).length-1;
-  var n_require=(data.toString().split('require')).length-1;
-  
->>>>>>> add

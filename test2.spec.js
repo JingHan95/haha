@@ -25,7 +25,7 @@ var n_red=(data.toString().split('color:red')).length-1;
 var n_require=(data.toString().split('require')).length-1;
   
 
-  describe('#indexOf1()', function(){
+  describe('#indexOf2()', function(){
 
     it('Ensuring that information conveyed by color differences is also available in text', function(){
       expect(n_red).to.be.equal(n_require)

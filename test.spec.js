@@ -1,4 +1,5 @@
 
+var assert = require(“assert”);
 var fs = require("fs");
 
 
@@ -46,7 +47,7 @@ var n_require=(data.toString().split('require')).length-1;
     });
     it('Ensuring that information conveyed by color differences is also available in text', function(){
       expect(n_red).to.be.equal(n_require)
-      done();
+
     });
     
   });

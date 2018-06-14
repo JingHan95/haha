@@ -10,8 +10,8 @@
     "mocha": "^5.2.0"
   },
   "scripts": {
-    "test": "node ./node_modules/mocha/bin/_mocha --timeout 1000000 --bail ./*.spec.js",
-    "test": "node ./node_modules/mocha/bin/_mocha --timeout 1000000 --bail ./test1.spec.js"
+    "test": "node ./node_modules/mocha/bin/_mocha --timeout 1000000 --bail ./*.spec.js"
+
   },
   "author": "",
   "license": "ISC"

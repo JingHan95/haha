@@ -2,7 +2,6 @@
   "name": "hj",
   "version": "1.0.0",
   "description": "",
-  "main": "add.js",
   "dependencies": {
     "expect": "^23.1.0",
     "chai": "^1.0.1"

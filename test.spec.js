@@ -41,12 +41,27 @@ foo = true;
 done();
 }, 2000);
 });
-it('if there are imgs', function(){
-      expect(data.toString()).to.include('img')
+it('alt is not empty', function(){
+      expect(data.toString()).to.not.include('alt= ""')
+
     });
 });
 
+describe('#indexOf2()', function(){
+var foo = false;
+beforeEach(function(done){
+setTimeout(function(){
+foo = true;
+// complete the async beforeEach
+done();
+}, 2000);
+});
+it('Ensuring that information conveyed by color differences is also available in text', function(){
+      expect(n_red).to.be.equal(n_require)
 
+    });
+    
+});
 
   describe('#indexOf1()', function(){
     

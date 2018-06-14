@@ -31,8 +31,8 @@ var n_red=(data.toString().split('color:red')).length-1;
 var n_require=(data.toString().split('require')).length-1;
   
 
-var assert = require(“assert”);
-describe(“a test”, function(){
+
+describe('#indexOf1()', function(){
 var foo = false;
 beforeEach(function(done){
 setTimeout(function(){

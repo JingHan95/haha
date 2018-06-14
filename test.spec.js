@@ -33,32 +33,25 @@ if(data.toString != ''){
 
 
 
-
-
 var expect = require('chai').expect;
 var n_img=(data.toString().split('img')).length-1;
 var n_alt=(data.toString().split('alt')).length-1;
 var n_red=(data.toString().split('color:red')).length-1;
 var n_require=(data.toString().split('require')).length-1;
   
+
   describe('#indexOf1()', function(){
     it('if there are imgs', function(){
       expect(data.toString()).to.include('img')
     });
-  });
-  describe('#indexOf4()', function(){
-    it('Ensuring that information conveyed by color differences is also available in text', function(){
-      expect(n_red).to.be.equal(n_require)
-    });
-  });
-  describe('#indexOf2()', function(){
     it('every <img> has "alt"', function(){
       expect(n_img).to.be.equal(n_alt);
     });
-  });
-  describe('#indexOf3()', function(){
     it('alt is not empty', function(){
       expect(data.toString()).to.not.include('alt= ""')
+    });
+    it('Ensuring that information conveyed by color differences is also available in text', function(){
+      expect(n_red).to.be.equal(n_require)
     });
   });
 

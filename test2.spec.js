@@ -7,7 +7,7 @@ var fs = require("fs");
 var data = fs.readFileSync('example.html');
 //console.log("同步读取: " + data.toString());
 if(data.toString != ''){
-	console.log('yes');
+	console.log('yes2');
 //	console.log("异步读取: " + data.toString());
 
 }else{
@@ -15,12 +15,6 @@ if(data.toString != ''){
 }
 
 
-
-
-
-var expect = require('chai').expect;
-var n_img=(data.toString().split('img')).length-1;
-var n_alt=(data.toString().split('alt')).length-1;
 var n_red=(data.toString().split('color:red')).length-1;
 var n_require=(data.toString().split('require')).length-1;
   

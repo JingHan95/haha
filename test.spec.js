@@ -43,18 +43,19 @@ var n_require=(data.toString().split('require')).length-1;
   
 
   describe('#indexOf1()', function(){
-    it('if there are imgs', function(){
-      expect(data.toString()).to.include('img')
-    });
-    it('every <img> has "alt"', function(){
-      expect(n_img).to.be.equal(n_alt);
-    });
     it('alt is not empty', function(){
       expect(data.toString()).to.not.include('alt= ""')
     });
     it('Ensuring that information conveyed by color differences is also available in text', function(){
       expect(n_red).to.be.equal(n_require)
     });
+    it('if there are imgs', function(){
+      expect(data.toString()).to.include('img')
+    });
+    it('every <img> has "alt"', function(){
+      expect(n_img).to.be.equal(n_alt);
+    });
+    
   });
 
 

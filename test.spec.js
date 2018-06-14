@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 var fs = require("fs");
 /*
 // 异步读取

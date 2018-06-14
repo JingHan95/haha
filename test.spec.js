@@ -1,9 +1,15 @@
-function say(word) {
-  console.log(word);
-}
+var fs = require("fs");
 
-function execute(someFunction, value) {
-  someFunction(value);
-}
+// 异步读取
+fs.readFile('example.html', function (err, data) {
+   if (err) {
+       return console.error(err);
+   }
+   console.log("异步读取: " + data.toString());
+});
 
-execute(say, "Hello");
+// 同步读取
+var data = fs.readFileSync('example.html');
+console.log("同步读取: " + data.toString());
+
+console.log("程序执行完毕。");

@@ -58,7 +58,7 @@ var n_require=(data.toString().split('require')).length-1;
   });
   describe('#indexOf4()', function(){
     it('Ensuring that information conveyed by color differences is also available in text', function(){
-      expect(n_red).to.be.equal(n_require);
+      expect(n_red).to.be.equal(n_require)
     });
   });
 

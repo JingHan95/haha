@@ -11,6 +11,7 @@
   },
   "scripts": {
     "test": "node ./node_modules/mocha/bin/_mocha --timeout 1000000 --bail ./test2.spec.js"
+    "test": "node ./node_modules/mocha/bin/_mocha --timeout 1000000 --bail ./test1.spec.js"
   },
   "author": "",
   "license": "ISC"

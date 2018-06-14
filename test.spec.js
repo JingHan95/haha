@@ -31,6 +31,23 @@ var n_red=(data.toString().split('color:red')).length-1;
 var n_require=(data.toString().split('require')).length-1;
   
 
+var assert = require(“assert”);
+describe(“a test”, function(){
+var foo = false;
+beforeEach(function(done){
+setTimeout(function(){
+foo = true;
+// complete the async beforeEach
+done();
+}, 2000);
+});
+it('if there are imgs', function(){
+      expect(data.toString()).to.include('img')
+    });
+});
+
+
+
   describe('#indexOf1()', function(){
     
     it('if there are imgs', function(){

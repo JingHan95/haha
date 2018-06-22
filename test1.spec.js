@@ -31,7 +31,7 @@ if(data.toString != ''){
 	console.log("程序执行完毕。");
 }
 
-//var fail=0;
+var fail=0;
 var expect = require('chai').expect;
 describe('#indexOf1()', function(){
     it('failing', function(){

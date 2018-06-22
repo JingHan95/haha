@@ -2,6 +2,8 @@
  * 
  */
 
+window.onload=function()
+{
 	/*
 	var x=document.getElementsByTagName("*");
     console.log(x[9]);
@@ -193,6 +195,7 @@
     console.log(pass,'passing');
     console.log(fail,'failing');
 
+}
 
 
  

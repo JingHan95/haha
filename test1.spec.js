@@ -30,6 +30,15 @@ if(data.toString != ''){
 }else{
 	console.log("程序执行完毕。");
 }
+
+
+describe('#indexOf1()', function(){
+    it('failing', function(){
+      expect(fail).to.be.equal(0);
+    });
+  });
+
+
 /*
 
 

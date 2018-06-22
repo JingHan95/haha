@@ -4,12 +4,8 @@ var expect = require('chai').expect;
 describe('测试',function(){
   it('测试不通过',function(){
     expect(fail).to.be.equal(0)
-  
-  
-  })
-
-
-})
+  });
+});
 
 
 

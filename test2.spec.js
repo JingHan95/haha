@@ -13,7 +13,7 @@ if(data.toString != ''){
 }else{
 	console.log("程序执行完毕。");
 }
-
+/*
 var expect = require('chai').expect;
 var n_red=(data.toString().split('color:red')).length-1;
 var n_require=(data.toString().split('require')).length-1;
@@ -27,7 +27,7 @@ var n_require=(data.toString().split('require')).length-1;
   });
 
 
-
+*/
 
 
   

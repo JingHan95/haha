@@ -33,7 +33,7 @@ if(data.toString != ''){
 
 
 
-
+var alt=0;
 
 
 
@@ -41,10 +41,16 @@ if(data.toString != ''){
 var str = data.toString();   
 var regExp = /alt= ""/; //未使用g选项   
 var res = regExp.exec(str);    
-if(res!='')
-	console.log('break');
+if(res!=''){
+	alt=1;
+}else{
+	alt=0;
+
+}
+	
+	//console.log('break');
    
-console.log(res); //输出[ 'aaa', index: 0, input: 'aaabbbcccaaabbbccc' ]   
+//console.log(res); //输出[ 'aaa', index: 0, input: 'aaabbbcccaaabbbccc' ]   
 
 
 
@@ -56,6 +62,16 @@ console.log(res); //输出[ 'aaa', index: 0, input: 'aaabbbcccaaabbbccc' ]
 
 
 var expect = require('chai').expect;
+
+describe('#alt_test()', function(){
+    it('alt can not be empty', function(){
+      expect(alt).to.be.equal(0)
+
+  });
+
+
+
+
 var n_img=(data.toString().split('img')).length-1;
 var n_alt=(data.toString().split('alt')).length-1;
 var n_red=(data.toString().split('color:red')).length-1;

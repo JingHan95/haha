@@ -33,7 +33,7 @@ if(data.toString != ''){
 
 
 var fs = require('fs');
-var cheerio = require('cheerio');
+var cheerio = require('./cheerio');
 
 var myHtml = fs.readFileSync("example.html");
 var $ = cheerio.load(myHtml);

@@ -31,8 +31,8 @@ if(data.toString != ''){
 	console.log("程序执行完毕。");
 }
 
-var str = "aaabbbcccaaabbbccc";   
-　　var regExp = /aaa/; //未使用g选项   
+var str = data.toString();   
+　　var regExp = /img/; //未使用g选项   
 　　var res = regExp.exec(str);    
 　　console.log(res); //输出[ 'aaa', index: 0, input: 'aaabbbcccaaabbbccc' ]   
 

@@ -1,5 +1,6 @@
-var fs = require("fs");
 /*
+var fs = require("fs");
+
 // 异步读取
 fs.readFile('example.html', function (err, data) {
    if (err) {

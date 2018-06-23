@@ -68,7 +68,7 @@ describe('#alt_test()', function(){
       expect(alt).to.be.equal(0)
 
   });
-
+});
 
 
 

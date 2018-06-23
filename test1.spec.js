@@ -55,21 +55,8 @@ if(res!=''){
 
 
 
-
-
-
-
-
-
-
 var expect = require('chai').expect;
 
-describe('#alt_test()', function(){
-    it('alt can not be empty', function(){
-      expect(alt).to.be.equal(0)
-
-  });
-});
 
 
 
@@ -91,6 +78,11 @@ var n_require=(data.toString().split('require')).length-1;
     });
 
   });
+describe('#alt_test()', function(){
+    it('alt can not be empty', function(){
+      expect(alt).to.be.equal(0)
 
+  });
+});
 
 

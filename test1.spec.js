@@ -31,13 +31,34 @@ if(data.toString != ''){
 	console.log("程序执行完毕。");
 }
 
+
+var fs = require('fs');
+var cheerio = require('cheerio');
+
+var myHtml = fs.readFileSync("example.html");
+var $ = cheerio.load(myHtml);
+var t = $('html').find('img');
+var t2 = t.nextAll();
+
+t2.each(function(i, elem) {
+    getContent($(this));
+    console.log($(this).text());
+});
+
+
+
+
+
+
+/*
+
 var str = data.toString();   
 　　var regExp = /img/; //未使用g选项   
 　　var res = regExp.exec(str);    
 　　console.log(res); //输出[ 'aaa', index: 0, input: 'aaabbbcccaaabbbccc' ]   
 
 
-
+*/
 
 
 

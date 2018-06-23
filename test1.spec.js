@@ -32,18 +32,6 @@ if(data.toString != ''){
 }
 
 
-var fs = require('fs');
-var cheerio = require('./cheerio');
-
-var myHtml = fs.readFileSync("example.html");
-var $ = cheerio.load(myHtml);
-var t = $('html').find('img');
-var t2 = t.nextAll();
-
-t2.each(function(i, elem) {
-    getContent($(this));
-    console.log($(this).text());
-});
 
 
 

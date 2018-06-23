@@ -36,15 +36,18 @@ if(data.toString != ''){
 
 
 
-/*
+
 
 var str = data.toString();   
-　　var regExp = /img/; //未使用g选项   
-　　var res = regExp.exec(str);    
-　　console.log(res); //输出[ 'aaa', index: 0, input: 'aaabbbcccaaabbbccc' ]   
+var regExp = /alt= ""/; //未使用g选项   
+var res = regExp.exec(str);    
+if(res!='')
+	console.log('break');
+   
+console.log(res); //输出[ 'aaa', index: 0, input: 'aaabbbcccaaabbbccc' ]   
 
 
-*/
+
 
 
 

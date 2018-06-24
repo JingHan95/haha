@@ -10,7 +10,7 @@
 	    "mocha": "^5.2.0"
 	  },
 	  "scripts": {
-	    "test": "nps test"
+	    "test": "npm test"
 	
 
 	  },

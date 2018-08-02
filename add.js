@@ -8,7 +8,7 @@ module.exports = add;
  * 
  */
 
-window.onload=function a(pass,fail)()
+window.onload=function()
 {
 
 

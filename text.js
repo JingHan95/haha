@@ -14,4 +14,5 @@ function calculatePosition(objElement, strOffset)
 
     return iOffset;
 }
+module.exports = calculatePosition;
 

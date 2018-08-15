@@ -9,8 +9,6 @@ describe('加法函数的测试', function() {
   });
 });
 
-/*
-
 var text = require('./text.js');
 var expect = require('chai').expect;
 describe('text', function() {
